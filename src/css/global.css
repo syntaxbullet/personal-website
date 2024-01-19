@@ -1,0 +1,180 @@
+@font-face {
+  font-family: "Geist Sans";
+  src: local("Geist Sans"), url("/fonts/GeistVariableVF.ttf") format("truetype"),
+    url("/fonts/GeistVariableVF.woff2") format("woff2");
+}
+* {
+  min-width: 0;
+  box-sizing: border-box;
+  font-family: "Geist Sans";
+}
+
+:root {
+  --step--2: clamp(0.7038rem, 0.9416rem + -0.2643vw, 0.8888rem);
+  --step--1: clamp(0.9375rem, 1.0179rem + -0.0893vw, 1rem);
+  --step-0: clamp(1.125rem, 1.0893rem + 0.1786vw, 1.25rem);
+  --step-1: clamp(1.2656rem, 1.1512rem + 0.5723vw, 1.6663rem);
+  --step-2: clamp(1.4238rem, 1.1959rem + 1.1393vw, 2.2213rem);
+  --step-3: clamp(1.6019rem, 1.2137rem + 1.9411vw, 2.9606rem);
+  --step-4: clamp(1.8019rem, 1.189rem + 3.0643vw, 3.9469rem);
+  --step-5: clamp(2.0275rem, 1.1038rem + 4.6188vw, 5.2606rem);
+}
+html,
+body {
+  background: black;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 400;
+  font-size: var(--step-0);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+h1 {
+  font-size: var(--step-5);;
+}
+h2 {
+  font-size: var(--step-4);
+}
+h3 {
+  font-size: var(--step-3);
+}
+h4 {
+  font-size: var(--step-2);
+}
+h5 {
+  font-size: var(--step-1);
+}
+h6 {
+  font-size: var(--step-0);
+}
+
+main {
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.subtext {
+  color: #666;
+  max-width: 960px;
+  margin-top: .5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.profile {
+  object-fit: cover;
+  border-radius: 300px;
+  display: block;
+  width: calc(var(--step-5) * 3.141592654);
+  min-width: 160px;
+  margin: 1rem 0;
+}
+.socials-button {
+  outline: 1px solid #333;
+  padding: 1rem;
+  border-style: none;
+  background: transparent;
+  border-radius: 0.5rem;
+  color: white;
+  transition: all 0.25s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--step--1);
+  display: flex;
+  gap: .5rem;
+}
+.socials-button:hover {
+  background: white;
+  outline: none;
+  transition: all 0.25s ease-in-out;
+  box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.6);
+  color: black;
+}
+.links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.resume-button {
+  font-weight: 500;
+  gap: .5rem;
+  flex-grow: 1;
+  font-size: var(--step--1);
+}
+a {
+  text-decoration: none;
+}
+.about {
+  width: 100%;
+  margin: 6rem 0;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+p {
+  color: #666;
+  max-width: 960px;
+  text-align: justify;
+  line-height: 1.5;
+}
+strong {
+  color: #aaa;
+  font-weight: 500;
+}
+em {
+  color: #ccc;
+}
+.projects {
+  padding: 2rem;
+}
+.project {
+  outline: 1px solid #333;
+  padding: 1rem;
+  margin: 2rem 0;
+  border-radius: .5rem;
+  position: relative;
+  max-width: 960px;
+  & p {
+    font-size: var(--step-0);
+    margin: .5rem 0;
+    text-align: left;
+  }
+  & button {
+    margin-top: 1rem;
+  }
+  & .badge {
+    font-size: var(--step--2);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    outline: 1px solid #333;
+    width: fit-content;
+    padding: .25rem .5rem;
+    border-radius: .25rem;
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    & span {
+      width: 10px;
+      height: 10px;
+      background: brown;
+      border-radius: 50px;
+    }
+  }
+}
