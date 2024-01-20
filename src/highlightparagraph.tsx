@@ -11,7 +11,7 @@ export default function HighlightedParagraph({children}: {children: React.ReactN
         // this uses a gaussian function to smooth out the highlight effect
         const amplitude = 1;
         const mean = .5;
-        let standardDeviation = 0.1 // this will affect the "size" of the light source
+        let standardDeviation = 0.2 // this will affect the "size" of the light source
         if (screen.orientation.type.includes("portrait")) {
             standardDeviation = 0.33;
         }
