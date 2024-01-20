@@ -13,7 +13,7 @@ export default function HighlightedParagraph({children}: {children: React.ReactN
         const mean = .5;
         let standardDeviation = 0.2 // this will affect the "size" of the light source
         if (screen.orientation.type.includes("portrait")) {
-            standardDeviation = 0.33;
+            standardDeviation = 0.4;
         }
         setCurrentOpacity(amplitude * Math.exp(-((latest - mean) ** 2) / (2 * standardDeviation ** 2)))
     })

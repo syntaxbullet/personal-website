@@ -117,26 +117,31 @@ export const Page = () => {
           part of a team that was figuring out how to make better intranet sites
           for the company. It was my first taste of the professional world, and
           it was extremely successful, they even offered me an IT-Management
-          scholarship in Berlin. But due to my goals of becoming a software engineer and my health, I decided to decline and stay in
-          Munich, closer to family and home.
+          scholarship in Berlin. But due to my goals of becoming a software
+          engineer and my health, I decided to decline and stay in Munich,
+          closer to family and home.
         </HighlightedParagraph>
         <HighlightedParagraph>
-          At 19, I was freelancing, making websites and apps for private individuals and small restaurants in my area. Then came a short internship at a Y-Combinator funded startup
-          called Demodesk, where I learned even more about building software in
-          a fast-paced environment. After only one month though in which I felt
-          like I wasn't really resonating with the company and a desire for educating myself further, I left and enrolled
-          in a full-time Bachelors program at the Munich University of Applied
-          Science, and after 2022 transferred into the newly opened Munich
-          Center for Digital Science and AI. Where I am still enrolled to this
-          day.
+          At 19, I was freelancing, making websites and apps for private
+          individuals and small restaurants in my area. Then came a short
+          internship at a Y-Combinator funded startup called Demodesk, where I
+          learned even more about building software in a fast-paced environment.
         </HighlightedParagraph>
         <HighlightedParagraph>
-          Today I can look back at this journey with pride. Every line of
-          code I've written tells a story of overcoming challenges and learning
-          new things. It's not just about being a software engineer. It's a
-          journey about finding a way to express myself through technology and
-          proving that with passion and perseverance, you can go anywhere, no
-          matter what stands in your way.
+          After only one month though in which I felt like I wasn't really
+          resonating with the company and a desire for educating myself further,
+          I left and enrolled in a full-time Bachelors program at the Munich
+          University of Applied Science, and after 2022 transferred into the
+          newly opened Munich Center for Digital Science and AI. Where I am
+          still enrolled to this day.
+        </HighlightedParagraph>
+        <HighlightedParagraph>
+          Today I can look back at this journey with pride. Every line of code
+          I've written tells a story of overcoming challenges and learning new
+          things. It's not just about being a software engineer. It's a journey
+          about finding a way to express myself through technology and proving
+          that with passion and perseverance, you can go anywhere, no matter
+          what stands in your way.
         </HighlightedParagraph>
       </article>
       <section className="projects">
