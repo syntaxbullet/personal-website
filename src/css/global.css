@@ -135,7 +135,8 @@ p {
   text-align: justify;
   line-height: 1.5;
 }
-@media screen and (max-width: 48p {
+@media screen and (max-width: 480px) {
+  .about p {
     text-align: left;
   }
 }
