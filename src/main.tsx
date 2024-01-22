@@ -1,9 +1,25 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import { Page } from './page'
-import "./css/global.css"
-ReactDOM.createRoot(document.getElementById('root')!).render(
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { Home } from "./routes/Home";
+import { Resume } from "./routes/Resume";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import "./css/global.css";
+
+const getBaseName = () => { 
+ const e = process.env.NODE_ENV;
+ if (e == undefined) return "/"
+ if (e == "development") return "/proxy/5173/absproxy/5173"
+ return "/" 
+}
+const router = createBrowserRouter(
+  [
+    { path: "/", element: <Home /> },
+    { path: "/work", element: <Resume /> },
+  ],
+  { basename: getBaseName() }
+);
+ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <Page/>
-  </React.StrictMode>,
-)
+    <RouterProvider router={router} />
+  </React.StrictMode>
+);

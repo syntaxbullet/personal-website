@@ -1,6 +1,6 @@
 import { motion, useScroll, useSpring } from "framer-motion";
-import HighlightedParagraph from "./highlightparagraph";
-export const Page = () => {
+import HighlightedParagraph from "../highlightparagraph";
+export const Home = () => {
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
     stiffness: 100,
