@@ -135,6 +135,18 @@ p {
   text-align: justify;
   line-height: 1.5;
 }
+small {
+  color: #999;
+  font-size: var(--step--1);
+}
+.resume__grid__items {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.resume__item {
+  flex-grow: 1;
+}
 @media screen and (max-width: 480px) {
   .about p {
     text-align: left;
