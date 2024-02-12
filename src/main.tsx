@@ -8,7 +8,7 @@ import "./css/global.css";
 const getBaseName = () => { 
  const e = process.env.NODE_ENV;
  if (e == undefined) return "/"
- if (e == "development") return "/proxy/5173/absproxy/5173"
+ if (e == "development") return "/"
  return "/" 
 }
 const router = createBrowserRouter(
