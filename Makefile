@@ -33,4 +33,4 @@ container-rund: ## Run the container in daemon mode in `nginx-public` network
 clean: ## Cleanup
 	@rm -rf node_modules
 
-update-deploy: pull container-build container-rund
+update-deploy: git-pull container-build container-rund
