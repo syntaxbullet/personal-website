@@ -30,7 +30,10 @@ container-run: ## Run the container
 container-rund: ## Run the container in daemon mode in `nginx-public` network
 	@docker run -d --network nginx-public --name personal-website syntaxbullet/personal-website
 
+container-rm: ## Remove container
+	@docker rm personal-website
+
 clean: ## Cleanup
 	@rm -rf node_modules
 
-update-deploy: git-pull container-build container-rund
+update-deploy: git-pull container-build container-rm container-rund
